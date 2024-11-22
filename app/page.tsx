@@ -20,7 +20,7 @@ const Index = () => {
                 <div className="flex flex-col items-center text-center space-y-4">
                   <MessageCircle className="w-12 h-12 text-purple-600" />
                   <h3 className="font-semibold text-xl">Chat</h3>
-                  <p className="text-gray-600">Connect instantly with real-time messaging</p>
+                  <p className="text-gray-600">Connect instantly with real-time messaging dude</p>
                 </div>
               </CardContent>
             </Card>
