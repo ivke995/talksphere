@@ -102,7 +102,12 @@ export function CustomNavUser() {
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <button onClick={() => signOut({ redirectUrl: '/' })}>
+              <button
+                onClick={() => signOut({ redirectUrl: "/" })}
+                aria-label="Sign out"
+                className="flex w-full items-center gap-2"
+              >
+                {" "}
                 <LogOut />
                 Log out
               </button>
