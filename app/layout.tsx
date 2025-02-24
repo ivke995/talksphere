@@ -1,8 +1,12 @@
 import {
-  ClerkProvider,
+  ClerkProvider
 } from '@clerk/nextjs'
+import { auth } from '@clerk/nextjs/server'
 import './globals.css'
 import SignIn from '@/components/sign-in'
+
+
+
 export default function RootLayout({
   children,
 }: {
@@ -10,12 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body>
-        <SignIn />
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body>
+      <SignIn />
+        {children}
+      </body>
+    </html>
+  </ClerkProvider>
   )
 }
